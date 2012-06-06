@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		068D3E7F157F0EB70019B7D8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068D3E7E157F0EB70019B7D8 /* Cocoa.framework */; };
+		068D3E89157F0EB70019B7D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 068D3E87157F0EB70019B7D8 /* InfoPlist.strings */; };
+		068D3E8B157F0EB70019B7D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D3E8A157F0EB70019B7D8 /* main.m */; };
+		068D3E8F157F0EB70019B7D8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 068D3E8D157F0EB70019B7D8 /* Credits.rtf */; };
+		068D3E92157F0EB70019B7D8 /* PspctAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D3E91157F0EB70019B7D8 /* PspctAppDelegate.m */; };
+		068D3E95157F0EB70019B7D8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 068D3E93157F0EB70019B7D8 /* MainMenu.xib */; };
+		068D3E98157F0EB70019B7D8 /* Dashboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 068D3E96157F0EB70019B7D8 /* Dashboard.xcdatamodeld */; };
+		068D3EA0157F0EB70019B7D8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068D3E9F157F0EB70019B7D8 /* SenTestingKit.framework */; };
+		068D3EA1157F0EB70019B7D8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068D3E7E157F0EB70019B7D8 /* Cocoa.framework */; };
+		068D3EA9157F0EB70019B7D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 068D3EA7157F0EB70019B7D8 /* InfoPlist.strings */; };
+		068D3EAC157F0EB70019B7D8 /* DashboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D3EAB157F0EB70019B7D8 /* DashboardTests.m */; };
+		068D3EB4157F0EB70019B7D8 /* DashboardImporter.mdimporter in Resources */ = {isa = PBXBuildFile; fileRef = 068D3EB1157F0EB70019B7D8 /* DashboardImporter.mdimporter */; };
+		068D3EB6157F0EB70019B7D8 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068D3EB5157F0EB70019B7D8 /* CoreServices.framework */; };
+		068D3EB8157F0EB70019B7D8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068D3EB7157F0EB70019B7D8 /* CoreFoundation.framework */; };
+		068D3EBA157F0EB70019B7D8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068D3EB9157F0EB70019B7D8 /* CoreData.framework */; };
+		068D3EBC157F0EB70019B7D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068D3EBB157F0EB70019B7D8 /* Foundation.framework */; };
+		068D3EC2157F0EB70019B7D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 068D3EC0157F0EB70019B7D8 /* InfoPlist.strings */; };
+		068D3EC4157F0EB70019B7D8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 068D3EC3157F0EB70019B7D8 /* main.c */; };
+		068D3EC6157F0EB70019B7D8 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D3EC5157F0EB70019B7D8 /* GetMetadataForFile.m */; };
+		068D3EC9157F0EB70019B7D8 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D3EC8157F0EB70019B7D8 /* MySpotlightImporter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		068D3EA2157F0EB70019B7D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 068D3E71157F0EB70019B7D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 068D3E79157F0EB70019B7D8;
+			remoteInfo = Dashboard;
+		};
+		068D3EB2157F0EB70019B7D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 068D3E71157F0EB70019B7D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 068D3EB0157F0EB70019B7D8;
+			remoteInfo = DashboardImporter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		068D3E7A157F0EB70019B7D8 /* Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		068D3E7E157F0EB70019B7D8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		068D3E81157F0EB70019B7D8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		068D3E82157F0EB70019B7D8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		068D3E83157F0EB70019B7D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		068D3E86157F0EB70019B7D8 /* Dashboard-Info.plist */ = {isa = PBXFileReference; path = "Dashboard-Info.plist"; sourceTree = "<group>"; };
+		068D3E88157F0EB70019B7D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		068D3E8A157F0EB70019B7D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		068D3E8C157F0EB70019B7D8 /* Dashboard-Prefix.pch */ = {isa = PBXFileReference; path = "Dashboard-Prefix.pch"; sourceTree = "<group>"; };
+		068D3E8E157F0EB70019B7D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		068D3E90157F0EB70019B7D8 /* PspctAppDelegate.h */ = {isa = PBXFileReference; path = PspctAppDelegate.h; sourceTree = "<group>"; };
+		068D3E91157F0EB70019B7D8 /* PspctAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PspctAppDelegate.m; sourceTree = "<group>"; };
+		068D3E94157F0EB70019B7D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		068D3E97157F0EB70019B7D8 /* Dashboard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dashboard.xcdatamodel; sourceTree = "<group>"; };
+		068D3E9E157F0EB70019B7D8 /* DashboardTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashboardTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		068D3E9F157F0EB70019B7D8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		068D3EA6157F0EB70019B7D8 /* DashboardTests-Info.plist */ = {isa = PBXFileReference; path = "DashboardTests-Info.plist"; sourceTree = "<group>"; };
+		068D3EA8157F0EB70019B7D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		068D3EAA157F0EB70019B7D8 /* DashboardTests.h */ = {isa = PBXFileReference; path = DashboardTests.h; sourceTree = "<group>"; };
+		068D3EAB157F0EB70019B7D8 /* DashboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashboardTests.m; sourceTree = "<group>"; };
+		068D3EB1157F0EB70019B7D8 /* DashboardImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashboardImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		068D3EB5157F0EB70019B7D8 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		068D3EB7157F0EB70019B7D8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		068D3EB9157F0EB70019B7D8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		068D3EBB157F0EB70019B7D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		068D3EBF157F0EB70019B7D8 /* DashboardImporter-Info.plist */ = {isa = PBXFileReference; path = "DashboardImporter-Info.plist"; sourceTree = "<group>"; };
+		068D3EC1157F0EB70019B7D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		068D3EC3157F0EB70019B7D8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		068D3EC5157F0EB70019B7D8 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
+		068D3EC7157F0EB70019B7D8 /* MySpotlightImporter.h */ = {isa = PBXFileReference; path = MySpotlightImporter.h; sourceTree = "<group>"; };
+		068D3EC8157F0EB70019B7D8 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
+		068D3ECA157F0EB70019B7D8 /* Importer Read Me.txt */ = {isa = PBXFileReference; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
+		068D3ECB157F0EB70019B7D8 /* DashboardImporter-Prefix.pch */ = {isa = PBXFileReference; path = "DashboardImporter-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		068D3E77157F0EB70019B7D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068D3E7F157F0EB70019B7D8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		068D3E9A157F0EB70019B7D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068D3EA0157F0EB70019B7D8 /* SenTestingKit.framework in Frameworks */,
+				068D3EA1157F0EB70019B7D8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		068D3EAE157F0EB70019B7D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068D3EB6157F0EB70019B7D8 /* CoreServices.framework in Frameworks */,
+				068D3EB8157F0EB70019B7D8 /* CoreFoundation.framework in Frameworks */,
+				068D3EBA157F0EB70019B7D8 /* CoreData.framework in Frameworks */,
+				068D3EBC157F0EB70019B7D8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		068D3E6F157F0EB70019B7D8 = {
+			isa = PBXGroup;
+			children = (
+				068D3E84157F0EB70019B7D8 /* Dashboard */,
+				068D3EA4157F0EB70019B7D8 /* DashboardTests */,
+				068D3EBD157F0EB70019B7D8 /* DashboardImporter */,
+				068D3E7D157F0EB70019B7D8 /* Frameworks */,
+				068D3E7B157F0EB70019B7D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		068D3E7B157F0EB70019B7D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				068D3E7A157F0EB70019B7D8 /* Dashboard.app */,
+				068D3E9E157F0EB70019B7D8 /* DashboardTests.octest */,
+				068D3EB1157F0EB70019B7D8 /* DashboardImporter.mdimporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		068D3E7D157F0EB70019B7D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				068D3E7E157F0EB70019B7D8 /* Cocoa.framework */,
+				068D3E9F157F0EB70019B7D8 /* SenTestingKit.framework */,
+				068D3EB5157F0EB70019B7D8 /* CoreServices.framework */,
+				068D3EB7157F0EB70019B7D8 /* CoreFoundation.framework */,
+				068D3EB9157F0EB70019B7D8 /* CoreData.framework */,
+				068D3EBB157F0EB70019B7D8 /* Foundation.framework */,
+				068D3E80157F0EB70019B7D8 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		068D3E80157F0EB70019B7D8 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				068D3E81157F0EB70019B7D8 /* AppKit.framework */,
+				068D3E82157F0EB70019B7D8 /* CoreData.framework */,
+				068D3E83157F0EB70019B7D8 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		068D3E84157F0EB70019B7D8 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				068D3E90157F0EB70019B7D8 /* PspctAppDelegate.h */,
+				068D3E91157F0EB70019B7D8 /* PspctAppDelegate.m */,
+				068D3E93157F0EB70019B7D8 /* MainMenu.xib */,
+				068D3E96157F0EB70019B7D8 /* Dashboard.xcdatamodeld */,
+				068D3E85157F0EB70019B7D8 /* Supporting Files */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		068D3E85157F0EB70019B7D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				068D3E86157F0EB70019B7D8 /* Dashboard-Info.plist */,
+				068D3E87157F0EB70019B7D8 /* InfoPlist.strings */,
+				068D3E8A157F0EB70019B7D8 /* main.m */,
+				068D3E8C157F0EB70019B7D8 /* Dashboard-Prefix.pch */,
+				068D3E8D157F0EB70019B7D8 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		068D3EA4157F0EB70019B7D8 /* DashboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				068D3EAA157F0EB70019B7D8 /* DashboardTests.h */,
+				068D3EAB157F0EB70019B7D8 /* DashboardTests.m */,
+				068D3EA5157F0EB70019B7D8 /* Supporting Files */,
+			);
+			path = DashboardTests;
+			sourceTree = "<group>";
+		};
+		068D3EA5157F0EB70019B7D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				068D3EA6157F0EB70019B7D8 /* DashboardTests-Info.plist */,
+				068D3EA7157F0EB70019B7D8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		068D3EBD157F0EB70019B7D8 /* DashboardImporter */ = {
+			isa = PBXGroup;
+			children = (
+				068D3EC5157F0EB70019B7D8 /* GetMetadataForFile.m */,
+				068D3EC7157F0EB70019B7D8 /* MySpotlightImporter.h */,
+				068D3EC8157F0EB70019B7D8 /* MySpotlightImporter.m */,
+				068D3ECA157F0EB70019B7D8 /* Importer Read Me.txt */,
+				068D3EBE157F0EB70019B7D8 /* Supporting Files */,
+			);
+			path = DashboardImporter;
+			sourceTree = "<group>";
+		};
+		068D3EBE157F0EB70019B7D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				068D3EBF157F0EB70019B7D8 /* DashboardImporter-Info.plist */,
+				068D3EC0157F0EB70019B7D8 /* InfoPlist.strings */,
+				068D3EC3157F0EB70019B7D8 /* main.c */,
+				068D3ECB157F0EB70019B7D8 /* DashboardImporter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		068D3E79157F0EB70019B7D8 /* Dashboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 068D3ED1157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "Dashboard" */;
+			buildPhases = (
+				068D3E76157F0EB70019B7D8 /* Sources */,
+				068D3E77157F0EB70019B7D8 /* Frameworks */,
+				068D3E78157F0EB70019B7D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				068D3EB3157F0EB70019B7D8 /* PBXTargetDependency */,
+			);
+			name = Dashboard;
+			productName = Dashboard;
+			productReference = 068D3E7A157F0EB70019B7D8 /* Dashboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		068D3E9D157F0EB70019B7D8 /* DashboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 068D3ED4157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "DashboardTests" */;
+			buildPhases = (
+				068D3E99157F0EB70019B7D8 /* Sources */,
+				068D3E9A157F0EB70019B7D8 /* Frameworks */,
+				068D3E9B157F0EB70019B7D8 /* Resources */,
+				068D3E9C157F0EB70019B7D8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				068D3EA3157F0EB70019B7D8 /* PBXTargetDependency */,
+			);
+			name = DashboardTests;
+			productName = DashboardTests;
+			productReference = 068D3E9E157F0EB70019B7D8 /* DashboardTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		068D3EB0157F0EB70019B7D8 /* DashboardImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 068D3ECE157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "DashboardImporter" */;
+			buildPhases = (
+				068D3EAD157F0EB70019B7D8 /* Sources */,
+				068D3EAE157F0EB70019B7D8 /* Frameworks */,
+				068D3EAF157F0EB70019B7D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DashboardImporter;
+			productName = DashboardImporter;
+			productReference = 068D3EB1157F0EB70019B7D8 /* DashboardImporter.mdimporter */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		068D3E71157F0EB70019B7D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Pspct;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 068D3E74157F0EB70019B7D8 /* Build configuration list for PBXProject "Dashboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 068D3E6F157F0EB70019B7D8;
+			productRefGroup = 068D3E7B157F0EB70019B7D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				068D3E79157F0EB70019B7D8 /* Dashboard */,
+				068D3E9D157F0EB70019B7D8 /* DashboardTests */,
+				068D3EB0157F0EB70019B7D8 /* DashboardImporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		068D3E78157F0EB70019B7D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068D3E89157F0EB70019B7D8 /* InfoPlist.strings in Resources */,
+				068D3E8F157F0EB70019B7D8 /* Credits.rtf in Resources */,
+				068D3E95157F0EB70019B7D8 /* MainMenu.xib in Resources */,
+				068D3EB4157F0EB70019B7D8 /* DashboardImporter.mdimporter in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		068D3E9B157F0EB70019B7D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068D3EA9157F0EB70019B7D8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		068D3EAF157F0EB70019B7D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068D3EC2157F0EB70019B7D8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		068D3E9C157F0EB70019B7D8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		068D3E76157F0EB70019B7D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068D3E8B157F0EB70019B7D8 /* main.m in Sources */,
+				068D3E92157F0EB70019B7D8 /* PspctAppDelegate.m in Sources */,
+				068D3E98157F0EB70019B7D8 /* Dashboard.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		068D3E99157F0EB70019B7D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068D3EAC157F0EB70019B7D8 /* DashboardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		068D3EAD157F0EB70019B7D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068D3EC4157F0EB70019B7D8 /* main.c in Sources */,
+				068D3EC6157F0EB70019B7D8 /* GetMetadataForFile.m in Sources */,
+				068D3EC9157F0EB70019B7D8 /* MySpotlightImporter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		068D3EA3157F0EB70019B7D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 068D3E79157F0EB70019B7D8 /* Dashboard */;
+			targetProxy = 068D3EA2157F0EB70019B7D8 /* PBXContainerItemProxy */;
+		};
+		068D3EB3157F0EB70019B7D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 068D3EB0157F0EB70019B7D8 /* DashboardImporter */;
+			targetProxy = 068D3EB2157F0EB70019B7D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		068D3E87157F0EB70019B7D8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				068D3E88157F0EB70019B7D8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		068D3E8D157F0EB70019B7D8 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				068D3E8E157F0EB70019B7D8 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		068D3E93157F0EB70019B7D8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				068D3E94157F0EB70019B7D8 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		068D3EA7157F0EB70019B7D8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				068D3EA8157F0EB70019B7D8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		068D3EC0157F0EB70019B7D8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				068D3EC1157F0EB70019B7D8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		068D3ECC157F0EB70019B7D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		068D3ECD157F0EB70019B7D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		068D3ECF157F0EB70019B7D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DashboardImporter/DashboardImporter-Prefix.pch";
+				INFOPLIST_FILE = "DashboardImporter/DashboardImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Debug;
+		};
+		068D3ED0157F0EB70019B7D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DashboardImporter/DashboardImporter-Prefix.pch";
+				INFOPLIST_FILE = "DashboardImporter/DashboardImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Release;
+		};
+		068D3ED2157F0EB70019B7D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dashboard/Dashboard-Prefix.pch";
+				INFOPLIST_FILE = "Dashboard/Dashboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		068D3ED3157F0EB70019B7D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dashboard/Dashboard-Prefix.pch";
+				INFOPLIST_FILE = "Dashboard/Dashboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		068D3ED5157F0EB70019B7D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dashboard.app/Contents/MacOS/Dashboard";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dashboard/Dashboard-Prefix.pch";
+				INFOPLIST_FILE = "DashboardTests/DashboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		068D3ED6157F0EB70019B7D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dashboard.app/Contents/MacOS/Dashboard";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dashboard/Dashboard-Prefix.pch";
+				INFOPLIST_FILE = "DashboardTests/DashboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		068D3E74157F0EB70019B7D8 /* Build configuration list for PBXProject "Dashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				068D3ECC157F0EB70019B7D8 /* Debug */,
+				068D3ECD157F0EB70019B7D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		068D3ECE157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "DashboardImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				068D3ECF157F0EB70019B7D8 /* Debug */,
+				068D3ED0157F0EB70019B7D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		068D3ED1157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "Dashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				068D3ED2157F0EB70019B7D8 /* Debug */,
+				068D3ED3157F0EB70019B7D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		068D3ED4157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "DashboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				068D3ED5157F0EB70019B7D8 /* Debug */,
+				068D3ED6157F0EB70019B7D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		068D3E96157F0EB70019B7D8 /* Dashboard.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				068D3E97157F0EB70019B7D8 /* Dashboard.xcdatamodel */,
+			);
+			currentVersion = 068D3E97157F0EB70019B7D8 /* Dashboard.xcdatamodel */;
+			path = Dashboard.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 068D3E71157F0EB70019B7D8 /* Project object */;
+}

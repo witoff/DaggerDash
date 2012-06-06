@@ -1,0 +1,6 @@
+//
+// Prefix header for all source files of the 'DashboardImporter' target in the 'DashboardImporter' project
+//
+
+#ifdef __OBJC__
+#endif
