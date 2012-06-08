@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[PspctContentController tableView:objectValueForTableColumn:row:]:PspctContentController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SpotlightSearch updateResults:]:SpotlightSearch.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SpotlightSearch getGroupedResults]:SpotlightSearch.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "m.length">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

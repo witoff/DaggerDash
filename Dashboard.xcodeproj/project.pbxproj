@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061F97C5158081D300D7254E /* NoodleIPhoneTableView.h in Sources */ = {isa = PBXBuildFile; fileRef = 068D4026157F34580019B7D8 /* NoodleIPhoneTableView.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		061F97C6158081D300D7254E /* NoodleIPhoneTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D4027157F34580019B7D8 /* NoodleIPhoneTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		061F97C7158081D300D7254E /* NoodleStickyRowTableView.h in Sources */ = {isa = PBXBuildFile; fileRef = 068D4028157F34580019B7D8 /* NoodleStickyRowTableView.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		061F97C8158081D300D7254E /* NoodleStickyRowTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D4029157F34580019B7D8 /* NoodleStickyRowTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		061F97C9158081D300D7254E /* NSImage-NoodleExtensions.h in Sources */ = {isa = PBXBuildFile; fileRef = 068D402A157F34580019B7D8 /* NSImage-NoodleExtensions.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		061F97CA158081D300D7254E /* NSImage-NoodleExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D402B157F34580019B7D8 /* NSImage-NoodleExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		061F97CE1580895C00D7254E /* PspctMetadataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 061F97CD1580895C00D7254E /* PspctMetadataItem.m */; };
 		068D3E7F157F0EB70019B7D8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068D3E7E157F0EB70019B7D8 /* Cocoa.framework */; };
 		068D3E89157F0EB70019B7D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 068D3E87157F0EB70019B7D8 /* InfoPlist.strings */; };
 		068D3E8B157F0EB70019B7D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D3E8A157F0EB70019B7D8 /* main.m */; };
@@ -27,6 +34,17 @@
 		068D3EC4157F0EB70019B7D8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 068D3EC3157F0EB70019B7D8 /* main.c */; };
 		068D3EC6157F0EB70019B7D8 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D3EC5157F0EB70019B7D8 /* GetMetadataForFile.m */; };
 		068D3EC9157F0EB70019B7D8 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D3EC8157F0EB70019B7D8 /* MySpotlightImporter.m */; };
+		068D3EEC157F1EF30019B7D8 /* PspctContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D3EEB157F1EF30019B7D8 /* PspctContentController.m */; };
+		068D3EF3157F25DF0019B7D8 /* SpotlightSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D3EF2157F25DF0019B7D8 /* SpotlightSearch.m */; };
+		068D402C157F34580019B7D8 /* NoodleIPhoneTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D4027157F34580019B7D8 /* NoodleIPhoneTableView.m */; };
+		068D402D157F34580019B7D8 /* NoodleStickyRowTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D4029157F34580019B7D8 /* NoodleStickyRowTableView.m */; };
+		068D402E157F34580019B7D8 /* NSImage-NoodleExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D402B157F34580019B7D8 /* NSImage-NoodleExtensions.m */; };
+		068D4032157F49960019B7D8 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D4031157F49960019B7D8 /* RegexKitLite.m */; };
+		069D68F21581A54B007B36DB /* PspctItemTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 069D68F11581A54B007B36DB /* PspctItemTable.m */; };
+		069D68F61581A746007B36DB /* PspctTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 069D68F51581A746007B36DB /* PspctTestView.m */; };
+		06D77AAD157F4E94002A6B67 /* RegexKitLite.h in Sources */ = {isa = PBXBuildFile; fileRef = 068D4030157F49960019B7D8 /* RegexKitLite.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		06D77AAE157F4E94002A6B67 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D4031157F49960019B7D8 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		06E9197E15818B5A00F61BBC /* PspctFileTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E9197D15818B5900F61BBC /* PspctFileTypeCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,39 +65,59 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		061F97CC1580895C00D7254E /* PspctMetadataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PspctMetadataItem.h; sourceTree = "<group>"; };
+		061F97CD1580895C00D7254E /* PspctMetadataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PspctMetadataItem.m; sourceTree = "<group>"; };
 		068D3E7A157F0EB70019B7D8 /* Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		068D3E7E157F0EB70019B7D8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		068D3E81157F0EB70019B7D8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		068D3E82157F0EB70019B7D8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		068D3E83157F0EB70019B7D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		068D3E86157F0EB70019B7D8 /* Dashboard-Info.plist */ = {isa = PBXFileReference; path = "Dashboard-Info.plist"; sourceTree = "<group>"; };
+		068D3E86157F0EB70019B7D8 /* Dashboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dashboard-Info.plist"; sourceTree = "<group>"; };
 		068D3E88157F0EB70019B7D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		068D3E8A157F0EB70019B7D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		068D3E8C157F0EB70019B7D8 /* Dashboard-Prefix.pch */ = {isa = PBXFileReference; path = "Dashboard-Prefix.pch"; sourceTree = "<group>"; };
+		068D3E8C157F0EB70019B7D8 /* Dashboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dashboard-Prefix.pch"; sourceTree = "<group>"; };
 		068D3E8E157F0EB70019B7D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		068D3E90157F0EB70019B7D8 /* PspctAppDelegate.h */ = {isa = PBXFileReference; path = PspctAppDelegate.h; sourceTree = "<group>"; };
+		068D3E90157F0EB70019B7D8 /* PspctAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PspctAppDelegate.h; sourceTree = "<group>"; };
 		068D3E91157F0EB70019B7D8 /* PspctAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PspctAppDelegate.m; sourceTree = "<group>"; };
 		068D3E94157F0EB70019B7D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		068D3E97157F0EB70019B7D8 /* Dashboard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dashboard.xcdatamodel; sourceTree = "<group>"; };
 		068D3E9E157F0EB70019B7D8 /* DashboardTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashboardTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		068D3E9F157F0EB70019B7D8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		068D3EA6157F0EB70019B7D8 /* DashboardTests-Info.plist */ = {isa = PBXFileReference; path = "DashboardTests-Info.plist"; sourceTree = "<group>"; };
+		068D3EA6157F0EB70019B7D8 /* DashboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DashboardTests-Info.plist"; sourceTree = "<group>"; };
 		068D3EA8157F0EB70019B7D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		068D3EAA157F0EB70019B7D8 /* DashboardTests.h */ = {isa = PBXFileReference; path = DashboardTests.h; sourceTree = "<group>"; };
+		068D3EAA157F0EB70019B7D8 /* DashboardTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashboardTests.h; sourceTree = "<group>"; };
 		068D3EAB157F0EB70019B7D8 /* DashboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashboardTests.m; sourceTree = "<group>"; };
 		068D3EB1157F0EB70019B7D8 /* DashboardImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashboardImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
 		068D3EB5157F0EB70019B7D8 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		068D3EB7157F0EB70019B7D8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		068D3EB9157F0EB70019B7D8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		068D3EBB157F0EB70019B7D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		068D3EBF157F0EB70019B7D8 /* DashboardImporter-Info.plist */ = {isa = PBXFileReference; path = "DashboardImporter-Info.plist"; sourceTree = "<group>"; };
+		068D3EBF157F0EB70019B7D8 /* DashboardImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DashboardImporter-Info.plist"; sourceTree = "<group>"; };
 		068D3EC1157F0EB70019B7D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		068D3EC3157F0EB70019B7D8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		068D3EC5157F0EB70019B7D8 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
-		068D3EC7157F0EB70019B7D8 /* MySpotlightImporter.h */ = {isa = PBXFileReference; path = MySpotlightImporter.h; sourceTree = "<group>"; };
+		068D3EC7157F0EB70019B7D8 /* MySpotlightImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySpotlightImporter.h; sourceTree = "<group>"; };
 		068D3EC8157F0EB70019B7D8 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
-		068D3ECA157F0EB70019B7D8 /* Importer Read Me.txt */ = {isa = PBXFileReference; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
-		068D3ECB157F0EB70019B7D8 /* DashboardImporter-Prefix.pch */ = {isa = PBXFileReference; path = "DashboardImporter-Prefix.pch"; sourceTree = "<group>"; };
+		068D3ECA157F0EB70019B7D8 /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
+		068D3ECB157F0EB70019B7D8 /* DashboardImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DashboardImporter-Prefix.pch"; sourceTree = "<group>"; };
+		068D3EEA157F1EF30019B7D8 /* PspctContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PspctContentController.h; sourceTree = "<group>"; };
+		068D3EEB157F1EF30019B7D8 /* PspctContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PspctContentController.m; sourceTree = "<group>"; };
+		068D3EF1157F25DF0019B7D8 /* SpotlightSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotlightSearch.h; sourceTree = "<group>"; };
+		068D3EF2157F25DF0019B7D8 /* SpotlightSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotlightSearch.m; sourceTree = "<group>"; };
+		068D4026157F34580019B7D8 /* NoodleIPhoneTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleIPhoneTableView.h; sourceTree = "<group>"; };
+		068D4027157F34580019B7D8 /* NoodleIPhoneTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleIPhoneTableView.m; sourceTree = "<group>"; };
+		068D4028157F34580019B7D8 /* NoodleStickyRowTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleStickyRowTableView.h; sourceTree = "<group>"; };
+		068D4029157F34580019B7D8 /* NoodleStickyRowTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleStickyRowTableView.m; sourceTree = "<group>"; };
+		068D402A157F34580019B7D8 /* NSImage-NoodleExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage-NoodleExtensions.h"; sourceTree = "<group>"; };
+		068D402B157F34580019B7D8 /* NSImage-NoodleExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage-NoodleExtensions.m"; sourceTree = "<group>"; };
+		068D4030157F49960019B7D8 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		068D4031157F49960019B7D8 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		069D68F01581A54B007B36DB /* PspctItemTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PspctItemTable.h; sourceTree = "<group>"; };
+		069D68F11581A54B007B36DB /* PspctItemTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PspctItemTable.m; sourceTree = "<group>"; };
+		069D68F41581A746007B36DB /* PspctTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PspctTestView.h; sourceTree = "<group>"; };
+		069D68F51581A746007B36DB /* PspctTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PspctTestView.m; sourceTree = "<group>"; };
+		06E9197C15818B5900F61BBC /* PspctFileTypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PspctFileTypeCell.h; sourceTree = "<group>"; };
+		06E9197D15818B5900F61BBC /* PspctFileTypeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PspctFileTypeCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +176,8 @@
 		068D3E7D157F0EB70019B7D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				068D4025157F34490019B7D8 /* Noodly */,
+				068D402F157F498C0019B7D8 /* RegexKitLite */,
 				068D3E7E157F0EB70019B7D8 /* Cocoa.framework */,
 				068D3E9F157F0EB70019B7D8 /* SenTestingKit.framework */,
 				068D3EB5157F0EB70019B7D8 /* CoreServices.framework */,
@@ -164,8 +204,9 @@
 			children = (
 				068D3E90157F0EB70019B7D8 /* PspctAppDelegate.h */,
 				068D3E91157F0EB70019B7D8 /* PspctAppDelegate.m */,
-				068D3E93157F0EB70019B7D8 /* MainMenu.xib */,
 				068D3E96157F0EB70019B7D8 /* Dashboard.xcdatamodeld */,
+				06E9197A15818B3C00F61BBC /* Views */,
+				068D3ED9157F12450019B7D8 /* Controllers */,
 				068D3E85157F0EB70019B7D8 /* Supporting Files */,
 			);
 			path = Dashboard;
@@ -174,6 +215,7 @@
 		068D3E85157F0EB70019B7D8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				068D3E93157F0EB70019B7D8 /* MainMenu.xib */,
 				068D3E86157F0EB70019B7D8 /* Dashboard-Info.plist */,
 				068D3E87157F0EB70019B7D8 /* InfoPlist.strings */,
 				068D3E8A157F0EB70019B7D8 /* main.m */,
@@ -223,6 +265,54 @@
 				068D3ECB157F0EB70019B7D8 /* DashboardImporter-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		068D3ED9157F12450019B7D8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				068D3EEA157F1EF30019B7D8 /* PspctContentController.h */,
+				068D3EEB157F1EF30019B7D8 /* PspctContentController.m */,
+				068D3EF1157F25DF0019B7D8 /* SpotlightSearch.h */,
+				068D3EF2157F25DF0019B7D8 /* SpotlightSearch.m */,
+				061F97CC1580895C00D7254E /* PspctMetadataItem.h */,
+				061F97CD1580895C00D7254E /* PspctMetadataItem.m */,
+				069D68F01581A54B007B36DB /* PspctItemTable.h */,
+				069D68F11581A54B007B36DB /* PspctItemTable.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		068D4025157F34490019B7D8 /* Noodly */ = {
+			isa = PBXGroup;
+			children = (
+				068D4026157F34580019B7D8 /* NoodleIPhoneTableView.h */,
+				068D4027157F34580019B7D8 /* NoodleIPhoneTableView.m */,
+				068D4028157F34580019B7D8 /* NoodleStickyRowTableView.h */,
+				068D4029157F34580019B7D8 /* NoodleStickyRowTableView.m */,
+				068D402A157F34580019B7D8 /* NSImage-NoodleExtensions.h */,
+				068D402B157F34580019B7D8 /* NSImage-NoodleExtensions.m */,
+			);
+			name = Noodly;
+			sourceTree = "<group>";
+		};
+		068D402F157F498C0019B7D8 /* RegexKitLite */ = {
+			isa = PBXGroup;
+			children = (
+				068D4030157F49960019B7D8 /* RegexKitLite.h */,
+				068D4031157F49960019B7D8 /* RegexKitLite.m */,
+			);
+			name = RegexKitLite;
+			sourceTree = "<group>";
+		};
+		06E9197A15818B3C00F61BBC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06E9197C15818B5900F61BBC /* PspctFileTypeCell.h */,
+				06E9197D15818B5900F61BBC /* PspctFileTypeCell.m */,
+				069D68F41581A746007B36DB /* PspctTestView.h */,
+				069D68F51581A746007B36DB /* PspctTestView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +387,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				English,
 			);
 			mainGroup = 068D3E6F157F0EB70019B7D8;
 			productRefGroup = 068D3E7B157F0EB70019B7D8 /* Products */;
@@ -361,9 +452,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				061F97C5158081D300D7254E /* NoodleIPhoneTableView.h in Sources */,
+				061F97C6158081D300D7254E /* NoodleIPhoneTableView.m in Sources */,
+				061F97C7158081D300D7254E /* NoodleStickyRowTableView.h in Sources */,
+				061F97C8158081D300D7254E /* NoodleStickyRowTableView.m in Sources */,
+				061F97C9158081D300D7254E /* NSImage-NoodleExtensions.h in Sources */,
+				061F97CA158081D300D7254E /* NSImage-NoodleExtensions.m in Sources */,
+				06D77AAD157F4E94002A6B67 /* RegexKitLite.h in Sources */,
+				06D77AAE157F4E94002A6B67 /* RegexKitLite.m in Sources */,
 				068D3E8B157F0EB70019B7D8 /* main.m in Sources */,
 				068D3E92157F0EB70019B7D8 /* PspctAppDelegate.m in Sources */,
 				068D3E98157F0EB70019B7D8 /* Dashboard.xcdatamodeld in Sources */,
+				068D3EEC157F1EF30019B7D8 /* PspctContentController.m in Sources */,
+				068D3EF3157F25DF0019B7D8 /* SpotlightSearch.m in Sources */,
+				061F97CE1580895C00D7254E /* PspctMetadataItem.m in Sources */,
+				06E9197E15818B5A00F61BBC /* PspctFileTypeCell.m in Sources */,
+				069D68F21581A54B007B36DB /* PspctItemTable.m in Sources */,
+				069D68F61581A746007B36DB /* PspctTestView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +477,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				068D3EAC157F0EB70019B7D8 /* DashboardTests.m in Sources */,
+				068D402C157F34580019B7D8 /* NoodleIPhoneTableView.m in Sources */,
+				068D402D157F34580019B7D8 /* NoodleStickyRowTableView.m in Sources */,
+				068D402E157F34580019B7D8 /* NSImage-NoodleExtensions.m in Sources */,
+				068D4032157F49960019B7D8 /* RegexKitLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +636,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dashboard/Dashboard-Prefix.pch";
 				INFOPLIST_FILE = "Dashboard/Dashboard-Info.plist";
+				OTHER_LDFLAGS = "-licucore";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -538,6 +648,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dashboard/Dashboard-Prefix.pch";
 				INFOPLIST_FILE = "Dashboard/Dashboard-Info.plist";
+				OTHER_LDFLAGS = "-licucore";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -590,6 +701,7 @@
 				068D3ED0157F0EB70019B7D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		068D3ED1157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "Dashboard" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +710,7 @@
 				068D3ED3157F0EB70019B7D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		068D3ED4157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "DashboardTests" */ = {
 			isa = XCConfigurationList;
@@ -606,6 +719,7 @@
 				068D3ED6157F0EB70019B7D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
