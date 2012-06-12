@@ -7,13 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		061F97C5158081D300D7254E /* NoodleIPhoneTableView.h in Sources */ = {isa = PBXBuildFile; fileRef = 068D4026157F34580019B7D8 /* NoodleIPhoneTableView.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		061F97C6158081D300D7254E /* NoodleIPhoneTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D4027157F34580019B7D8 /* NoodleIPhoneTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		061F97C7158081D300D7254E /* NoodleStickyRowTableView.h in Sources */ = {isa = PBXBuildFile; fileRef = 068D4028157F34580019B7D8 /* NoodleStickyRowTableView.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		061F97C8158081D300D7254E /* NoodleStickyRowTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D4029157F34580019B7D8 /* NoodleStickyRowTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		061F97C9158081D300D7254E /* NSImage-NoodleExtensions.h in Sources */ = {isa = PBXBuildFile; fileRef = 068D402A157F34580019B7D8 /* NSImage-NoodleExtensions.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		061F97CA158081D300D7254E /* NSImage-NoodleExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D402B157F34580019B7D8 /* NSImage-NoodleExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		061F97CE1580895C00D7254E /* PspctMetadataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 061F97CD1580895C00D7254E /* PspctMetadataItem.m */; };
+		0668FCB91581D3C800395894 /* PspctTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0668FCB81581D3C800395894 /* PspctTableCellView.m */; };
 		068D3E7F157F0EB70019B7D8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068D3E7E157F0EB70019B7D8 /* Cocoa.framework */; };
 		068D3E89157F0EB70019B7D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 068D3E87157F0EB70019B7D8 /* InfoPlist.strings */; };
 		068D3E8B157F0EB70019B7D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D3E8A157F0EB70019B7D8 /* main.m */; };
@@ -25,7 +20,7 @@
 		068D3EA1157F0EB70019B7D8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068D3E7E157F0EB70019B7D8 /* Cocoa.framework */; };
 		068D3EA9157F0EB70019B7D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 068D3EA7157F0EB70019B7D8 /* InfoPlist.strings */; };
 		068D3EAC157F0EB70019B7D8 /* DashboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D3EAB157F0EB70019B7D8 /* DashboardTests.m */; };
-		068D3EB4157F0EB70019B7D8 /* DashboardImporter.mdimporter in Resources */ = {isa = PBXBuildFile; fileRef = 068D3EB1157F0EB70019B7D8 /* DashboardImporter.mdimporter */; };
+		068D3EB4157F0EB70019B7D8 /* DaggerDashImporter.mdimporter in Resources */ = {isa = PBXBuildFile; fileRef = 068D3EB1157F0EB70019B7D8 /* DaggerDashImporter.mdimporter */; };
 		068D3EB6157F0EB70019B7D8 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068D3EB5157F0EB70019B7D8 /* CoreServices.framework */; };
 		068D3EB8157F0EB70019B7D8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068D3EB7157F0EB70019B7D8 /* CoreFoundation.framework */; };
 		068D3EBA157F0EB70019B7D8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068D3EB9157F0EB70019B7D8 /* CoreData.framework */; };
@@ -36,15 +31,19 @@
 		068D3EC9157F0EB70019B7D8 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D3EC8157F0EB70019B7D8 /* MySpotlightImporter.m */; };
 		068D3EEC157F1EF30019B7D8 /* PspctContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D3EEB157F1EF30019B7D8 /* PspctContentController.m */; };
 		068D3EF3157F25DF0019B7D8 /* SpotlightSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D3EF2157F25DF0019B7D8 /* SpotlightSearch.m */; };
-		068D402C157F34580019B7D8 /* NoodleIPhoneTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D4027157F34580019B7D8 /* NoodleIPhoneTableView.m */; };
-		068D402D157F34580019B7D8 /* NoodleStickyRowTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D4029157F34580019B7D8 /* NoodleStickyRowTableView.m */; };
-		068D402E157F34580019B7D8 /* NSImage-NoodleExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D402B157F34580019B7D8 /* NSImage-NoodleExtensions.m */; };
 		068D4032157F49960019B7D8 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D4031157F49960019B7D8 /* RegexKitLite.m */; };
 		069D68F21581A54B007B36DB /* PspctItemTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 069D68F11581A54B007B36DB /* PspctItemTable.m */; };
 		069D68F61581A746007B36DB /* PspctTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 069D68F51581A746007B36DB /* PspctTestView.m */; };
 		06D77AAD157F4E94002A6B67 /* RegexKitLite.h in Sources */ = {isa = PBXBuildFile; fileRef = 068D4030157F49960019B7D8 /* RegexKitLite.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		06D77AAE157F4E94002A6B67 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 068D4031157F49960019B7D8 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		06E9197E15818B5A00F61BBC /* PspctFileTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E9197D15818B5900F61BBC /* PspctFileTypeCell.m */; };
+		06DA3B7E15846350004AD05D /* PspctWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA3B7D15846350004AD05D /* PspctWindow.m */; };
+		06E4EB6715858340002347A3 /* DDHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E4EB6615858340002347A3 /* DDHotKeyCenter.m */; };
+		06E4EB6A15858401002347A3 /* DDHotKeyCenter.h in Sources */ = {isa = PBXBuildFile; fileRef = 06E4EB6515858340002347A3 /* DDHotKeyCenter.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		06E4EB6B15858401002347A3 /* DDHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E4EB6615858340002347A3 /* DDHotKeyCenter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		06E4EB6D1585841F002347A3 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E4EB6C1585841F002347A3 /* Carbon.framework */; };
+		06E4EB7115858899002347A3 /* 55-todo.png in Resources */ = {isa = PBXBuildFile; fileRef = 06E4EB7015858899002347A3 /* 55-todo.png */; };
+		06E4EB7315858918002347A3 /* 55-todo.big.png in Resources */ = {isa = PBXBuildFile; fileRef = 06E4EB7215858918002347A3 /* 55-todo.big.png */; };
+		06E4EB751585894B002347A3 /* 55-todo.big.png in Resources */ = {isa = PBXBuildFile; fileRef = 06E4EB741585894B002347A3 /* 55-todo.big.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,57 +66,59 @@
 /* Begin PBXFileReference section */
 		061F97CC1580895C00D7254E /* PspctMetadataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PspctMetadataItem.h; sourceTree = "<group>"; };
 		061F97CD1580895C00D7254E /* PspctMetadataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PspctMetadataItem.m; sourceTree = "<group>"; };
-		068D3E7A157F0EB70019B7D8 /* Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0668FCB71581D3C800395894 /* PspctTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PspctTableCellView.h; sourceTree = "<group>"; };
+		0668FCB81581D3C800395894 /* PspctTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PspctTableCellView.m; sourceTree = "<group>"; };
+		068D3E7A157F0EB70019B7D8 /* DaggerDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaggerDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		068D3E7E157F0EB70019B7D8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		068D3E81157F0EB70019B7D8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		068D3E82157F0EB70019B7D8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		068D3E83157F0EB70019B7D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		068D3E86157F0EB70019B7D8 /* Dashboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dashboard-Info.plist"; sourceTree = "<group>"; };
+		068D3E86157F0EB70019B7D8 /* DaggerDash-Info.plist */ = {isa = PBXFileReference; path = "DaggerDash-Info.plist"; sourceTree = "<group>"; };
 		068D3E88157F0EB70019B7D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		068D3E8A157F0EB70019B7D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		068D3E8C157F0EB70019B7D8 /* Dashboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dashboard-Prefix.pch"; sourceTree = "<group>"; };
+		068D3E8C157F0EB70019B7D8 /* DaggerDash-Prefix.pch */ = {isa = PBXFileReference; path = "DaggerDash-Prefix.pch"; sourceTree = "<group>"; };
 		068D3E8E157F0EB70019B7D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		068D3E90157F0EB70019B7D8 /* PspctAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PspctAppDelegate.h; sourceTree = "<group>"; };
 		068D3E91157F0EB70019B7D8 /* PspctAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PspctAppDelegate.m; sourceTree = "<group>"; };
 		068D3E94157F0EB70019B7D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		068D3E97157F0EB70019B7D8 /* Dashboard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dashboard.xcdatamodel; sourceTree = "<group>"; };
-		068D3E9E157F0EB70019B7D8 /* DashboardTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashboardTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		068D3E9E157F0EB70019B7D8 /* DaggerDashTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaggerDashTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		068D3E9F157F0EB70019B7D8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		068D3EA6157F0EB70019B7D8 /* DashboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DashboardTests-Info.plist"; sourceTree = "<group>"; };
+		068D3EA6157F0EB70019B7D8 /* DaggerDashTests-Info.plist */ = {isa = PBXFileReference; path = "DaggerDashTests-Info.plist"; sourceTree = "<group>"; };
 		068D3EA8157F0EB70019B7D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		068D3EAA157F0EB70019B7D8 /* DashboardTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashboardTests.h; sourceTree = "<group>"; };
 		068D3EAB157F0EB70019B7D8 /* DashboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashboardTests.m; sourceTree = "<group>"; };
-		068D3EB1157F0EB70019B7D8 /* DashboardImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashboardImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		068D3EB1157F0EB70019B7D8 /* DaggerDashImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaggerDashImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
 		068D3EB5157F0EB70019B7D8 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		068D3EB7157F0EB70019B7D8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		068D3EB9157F0EB70019B7D8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		068D3EBB157F0EB70019B7D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		068D3EBF157F0EB70019B7D8 /* DashboardImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DashboardImporter-Info.plist"; sourceTree = "<group>"; };
+		068D3EBF157F0EB70019B7D8 /* DaggerDashImporter-Info.plist */ = {isa = PBXFileReference; path = "DaggerDashImporter-Info.plist"; sourceTree = "<group>"; };
 		068D3EC1157F0EB70019B7D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		068D3EC3157F0EB70019B7D8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		068D3EC5157F0EB70019B7D8 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
 		068D3EC7157F0EB70019B7D8 /* MySpotlightImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySpotlightImporter.h; sourceTree = "<group>"; };
 		068D3EC8157F0EB70019B7D8 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
 		068D3ECA157F0EB70019B7D8 /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
-		068D3ECB157F0EB70019B7D8 /* DashboardImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DashboardImporter-Prefix.pch"; sourceTree = "<group>"; };
+		068D3ECB157F0EB70019B7D8 /* DaggerDashImporter-Prefix.pch */ = {isa = PBXFileReference; path = "DaggerDashImporter-Prefix.pch"; sourceTree = "<group>"; };
 		068D3EEA157F1EF30019B7D8 /* PspctContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PspctContentController.h; sourceTree = "<group>"; };
 		068D3EEB157F1EF30019B7D8 /* PspctContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PspctContentController.m; sourceTree = "<group>"; };
 		068D3EF1157F25DF0019B7D8 /* SpotlightSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotlightSearch.h; sourceTree = "<group>"; };
 		068D3EF2157F25DF0019B7D8 /* SpotlightSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotlightSearch.m; sourceTree = "<group>"; };
-		068D4026157F34580019B7D8 /* NoodleIPhoneTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleIPhoneTableView.h; sourceTree = "<group>"; };
-		068D4027157F34580019B7D8 /* NoodleIPhoneTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleIPhoneTableView.m; sourceTree = "<group>"; };
-		068D4028157F34580019B7D8 /* NoodleStickyRowTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleStickyRowTableView.h; sourceTree = "<group>"; };
-		068D4029157F34580019B7D8 /* NoodleStickyRowTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleStickyRowTableView.m; sourceTree = "<group>"; };
-		068D402A157F34580019B7D8 /* NSImage-NoodleExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage-NoodleExtensions.h"; sourceTree = "<group>"; };
-		068D402B157F34580019B7D8 /* NSImage-NoodleExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage-NoodleExtensions.m"; sourceTree = "<group>"; };
 		068D4030157F49960019B7D8 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
 		068D4031157F49960019B7D8 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		069D68F01581A54B007B36DB /* PspctItemTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PspctItemTable.h; sourceTree = "<group>"; };
 		069D68F11581A54B007B36DB /* PspctItemTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PspctItemTable.m; sourceTree = "<group>"; };
 		069D68F41581A746007B36DB /* PspctTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PspctTestView.h; sourceTree = "<group>"; };
 		069D68F51581A746007B36DB /* PspctTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PspctTestView.m; sourceTree = "<group>"; };
-		06E9197C15818B5900F61BBC /* PspctFileTypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PspctFileTypeCell.h; sourceTree = "<group>"; };
-		06E9197D15818B5900F61BBC /* PspctFileTypeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PspctFileTypeCell.m; sourceTree = "<group>"; };
+		06DA3B7C15846350004AD05D /* PspctWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PspctWindow.h; sourceTree = "<group>"; };
+		06DA3B7D15846350004AD05D /* PspctWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PspctWindow.m; sourceTree = "<group>"; };
+		06E4EB6515858340002347A3 /* DDHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyCenter.h; sourceTree = "<group>"; };
+		06E4EB6615858340002347A3 /* DDHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyCenter.m; sourceTree = "<group>"; };
+		06E4EB6C1585841F002347A3 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		06E4EB7015858899002347A3 /* 55-todo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "55-todo.png"; sourceTree = "<group>"; };
+		06E4EB7215858918002347A3 /* 55-todo.big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "55-todo.big.png"; sourceTree = "<group>"; };
+		06E4EB741585894B002347A3 /* 55-todo.big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "55-todo.big.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06E4EB6D1585841F002347A3 /* Carbon.framework in Frameworks */,
 				068D3E7F157F0EB70019B7D8 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,9 +157,11 @@
 		068D3E6F157F0EB70019B7D8 = {
 			isa = PBXGroup;
 			children = (
-				068D3E84157F0EB70019B7D8 /* Dashboard */,
-				068D3EA4157F0EB70019B7D8 /* DashboardTests */,
-				068D3EBD157F0EB70019B7D8 /* DashboardImporter */,
+				06E4EB741585894B002347A3 /* 55-todo.big.png */,
+				06E4EB6C1585841F002347A3 /* Carbon.framework */,
+				068D3E84157F0EB70019B7D8 /* DaggerDash */,
+				068D3EA4157F0EB70019B7D8 /* DaggerDashTests */,
+				068D3EBD157F0EB70019B7D8 /* DaggerDashImporter */,
 				068D3E7D157F0EB70019B7D8 /* Frameworks */,
 				068D3E7B157F0EB70019B7D8 /* Products */,
 			);
@@ -166,9 +170,9 @@
 		068D3E7B157F0EB70019B7D8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				068D3E7A157F0EB70019B7D8 /* Dashboard.app */,
-				068D3E9E157F0EB70019B7D8 /* DashboardTests.octest */,
-				068D3EB1157F0EB70019B7D8 /* DashboardImporter.mdimporter */,
+				068D3E7A157F0EB70019B7D8 /* DaggerDash.app */,
+				068D3E9E157F0EB70019B7D8 /* DaggerDashTests.octest */,
+				068D3EB1157F0EB70019B7D8 /* DaggerDashImporter.mdimporter */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,7 +180,7 @@
 		068D3E7D157F0EB70019B7D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				068D4025157F34490019B7D8 /* Noodly */,
+				06E4EB6915858343002347A3 /* DDHotKeyCenter */,
 				068D402F157F498C0019B7D8 /* RegexKitLite */,
 				068D3E7E157F0EB70019B7D8 /* Cocoa.framework */,
 				068D3E9F157F0EB70019B7D8 /* SenTestingKit.framework */,
@@ -199,7 +203,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		068D3E84157F0EB70019B7D8 /* Dashboard */ = {
+		068D3E84157F0EB70019B7D8 /* DaggerDash */ = {
 			isa = PBXGroup;
 			children = (
 				068D3E90157F0EB70019B7D8 /* PspctAppDelegate.h */,
@@ -209,42 +213,46 @@
 				068D3ED9157F12450019B7D8 /* Controllers */,
 				068D3E85157F0EB70019B7D8 /* Supporting Files */,
 			);
+			name = DaggerDash;
 			path = Dashboard;
 			sourceTree = "<group>";
 		};
 		068D3E85157F0EB70019B7D8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				06E4EB7215858918002347A3 /* 55-todo.big.png */,
+				06E4EB7015858899002347A3 /* 55-todo.png */,
 				068D3E93157F0EB70019B7D8 /* MainMenu.xib */,
-				068D3E86157F0EB70019B7D8 /* Dashboard-Info.plist */,
+				068D3E86157F0EB70019B7D8 /* DaggerDash-Info.plist */,
 				068D3E87157F0EB70019B7D8 /* InfoPlist.strings */,
 				068D3E8A157F0EB70019B7D8 /* main.m */,
-				068D3E8C157F0EB70019B7D8 /* Dashboard-Prefix.pch */,
+				068D3E8C157F0EB70019B7D8 /* DaggerDash-Prefix.pch */,
 				068D3E8D157F0EB70019B7D8 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		068D3EA4157F0EB70019B7D8 /* DashboardTests */ = {
+		068D3EA4157F0EB70019B7D8 /* DaggerDashTests */ = {
 			isa = PBXGroup;
 			children = (
 				068D3EAA157F0EB70019B7D8 /* DashboardTests.h */,
 				068D3EAB157F0EB70019B7D8 /* DashboardTests.m */,
 				068D3EA5157F0EB70019B7D8 /* Supporting Files */,
 			);
+			name = DaggerDashTests;
 			path = DashboardTests;
 			sourceTree = "<group>";
 		};
 		068D3EA5157F0EB70019B7D8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				068D3EA6157F0EB70019B7D8 /* DashboardTests-Info.plist */,
+				068D3EA6157F0EB70019B7D8 /* DaggerDashTests-Info.plist */,
 				068D3EA7157F0EB70019B7D8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		068D3EBD157F0EB70019B7D8 /* DashboardImporter */ = {
+		068D3EBD157F0EB70019B7D8 /* DaggerDashImporter */ = {
 			isa = PBXGroup;
 			children = (
 				068D3EC5157F0EB70019B7D8 /* GetMetadataForFile.m */,
@@ -253,16 +261,17 @@
 				068D3ECA157F0EB70019B7D8 /* Importer Read Me.txt */,
 				068D3EBE157F0EB70019B7D8 /* Supporting Files */,
 			);
+			name = DaggerDashImporter;
 			path = DashboardImporter;
 			sourceTree = "<group>";
 		};
 		068D3EBE157F0EB70019B7D8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				068D3EBF157F0EB70019B7D8 /* DashboardImporter-Info.plist */,
+				068D3EBF157F0EB70019B7D8 /* DaggerDashImporter-Info.plist */,
 				068D3EC0157F0EB70019B7D8 /* InfoPlist.strings */,
 				068D3EC3157F0EB70019B7D8 /* main.c */,
-				068D3ECB157F0EB70019B7D8 /* DashboardImporter-Prefix.pch */,
+				068D3ECB157F0EB70019B7D8 /* DaggerDashImporter-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -276,23 +285,8 @@
 				068D3EF2157F25DF0019B7D8 /* SpotlightSearch.m */,
 				061F97CC1580895C00D7254E /* PspctMetadataItem.h */,
 				061F97CD1580895C00D7254E /* PspctMetadataItem.m */,
-				069D68F01581A54B007B36DB /* PspctItemTable.h */,
-				069D68F11581A54B007B36DB /* PspctItemTable.m */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		068D4025157F34490019B7D8 /* Noodly */ = {
-			isa = PBXGroup;
-			children = (
-				068D4026157F34580019B7D8 /* NoodleIPhoneTableView.h */,
-				068D4027157F34580019B7D8 /* NoodleIPhoneTableView.m */,
-				068D4028157F34580019B7D8 /* NoodleStickyRowTableView.h */,
-				068D4029157F34580019B7D8 /* NoodleStickyRowTableView.m */,
-				068D402A157F34580019B7D8 /* NSImage-NoodleExtensions.h */,
-				068D402B157F34580019B7D8 /* NSImage-NoodleExtensions.m */,
-			);
-			name = Noodly;
 			sourceTree = "<group>";
 		};
 		068D402F157F498C0019B7D8 /* RegexKitLite */ = {
@@ -304,13 +298,26 @@
 			name = RegexKitLite;
 			sourceTree = "<group>";
 		};
+		06E4EB6915858343002347A3 /* DDHotKeyCenter */ = {
+			isa = PBXGroup;
+			children = (
+				06E4EB6515858340002347A3 /* DDHotKeyCenter.h */,
+				06E4EB6615858340002347A3 /* DDHotKeyCenter.m */,
+			);
+			name = DDHotKeyCenter;
+			sourceTree = "<group>";
+		};
 		06E9197A15818B3C00F61BBC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				06E9197C15818B5900F61BBC /* PspctFileTypeCell.h */,
-				06E9197D15818B5900F61BBC /* PspctFileTypeCell.m */,
 				069D68F41581A746007B36DB /* PspctTestView.h */,
 				069D68F51581A746007B36DB /* PspctTestView.m */,
+				0668FCB71581D3C800395894 /* PspctTableCellView.h */,
+				0668FCB81581D3C800395894 /* PspctTableCellView.m */,
+				069D68F01581A54B007B36DB /* PspctItemTable.h */,
+				069D68F11581A54B007B36DB /* PspctItemTable.m */,
+				06DA3B7C15846350004AD05D /* PspctWindow.h */,
+				06DA3B7D15846350004AD05D /* PspctWindow.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -318,9 +325,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		068D3E79157F0EB70019B7D8 /* Dashboard */ = {
+		068D3E79157F0EB70019B7D8 /* DaggerDash */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 068D3ED1157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "Dashboard" */;
+			buildConfigurationList = 068D3ED1157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "DaggerDash" */;
 			buildPhases = (
 				068D3E76157F0EB70019B7D8 /* Sources */,
 				068D3E77157F0EB70019B7D8 /* Frameworks */,
@@ -331,14 +338,14 @@
 			dependencies = (
 				068D3EB3157F0EB70019B7D8 /* PBXTargetDependency */,
 			);
-			name = Dashboard;
+			name = DaggerDash;
 			productName = Dashboard;
-			productReference = 068D3E7A157F0EB70019B7D8 /* Dashboard.app */;
+			productReference = 068D3E7A157F0EB70019B7D8 /* DaggerDash.app */;
 			productType = "com.apple.product-type.application";
 		};
-		068D3E9D157F0EB70019B7D8 /* DashboardTests */ = {
+		068D3E9D157F0EB70019B7D8 /* DaggerDashTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 068D3ED4157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "DashboardTests" */;
+			buildConfigurationList = 068D3ED4157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "DaggerDashTests" */;
 			buildPhases = (
 				068D3E99157F0EB70019B7D8 /* Sources */,
 				068D3E9A157F0EB70019B7D8 /* Frameworks */,
@@ -350,14 +357,14 @@
 			dependencies = (
 				068D3EA3157F0EB70019B7D8 /* PBXTargetDependency */,
 			);
-			name = DashboardTests;
+			name = DaggerDashTests;
 			productName = DashboardTests;
-			productReference = 068D3E9E157F0EB70019B7D8 /* DashboardTests.octest */;
+			productReference = 068D3E9E157F0EB70019B7D8 /* DaggerDashTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		068D3EB0157F0EB70019B7D8 /* DashboardImporter */ = {
+		068D3EB0157F0EB70019B7D8 /* DaggerDashImporter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 068D3ECE157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "DashboardImporter" */;
+			buildConfigurationList = 068D3ECE157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "DaggerDashImporter" */;
 			buildPhases = (
 				068D3EAD157F0EB70019B7D8 /* Sources */,
 				068D3EAE157F0EB70019B7D8 /* Frameworks */,
@@ -367,9 +374,9 @@
 			);
 			dependencies = (
 			);
-			name = DashboardImporter;
+			name = DaggerDashImporter;
 			productName = DashboardImporter;
-			productReference = 068D3EB1157F0EB70019B7D8 /* DashboardImporter.mdimporter */;
+			productReference = 068D3EB1157F0EB70019B7D8 /* DaggerDashImporter.mdimporter */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -381,7 +388,7 @@
 				CLASSPREFIX = Pspct;
 				LastUpgradeCheck = 0430;
 			};
-			buildConfigurationList = 068D3E74157F0EB70019B7D8 /* Build configuration list for PBXProject "Dashboard" */;
+			buildConfigurationList = 068D3E74157F0EB70019B7D8 /* Build configuration list for PBXProject "DaggerDash" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -394,9 +401,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				068D3E79157F0EB70019B7D8 /* Dashboard */,
-				068D3E9D157F0EB70019B7D8 /* DashboardTests */,
-				068D3EB0157F0EB70019B7D8 /* DashboardImporter */,
+				068D3E79157F0EB70019B7D8 /* DaggerDash */,
+				068D3E9D157F0EB70019B7D8 /* DaggerDashTests */,
+				068D3EB0157F0EB70019B7D8 /* DaggerDashImporter */,
 			);
 		};
 /* End PBXProject section */
@@ -409,7 +416,10 @@
 				068D3E89157F0EB70019B7D8 /* InfoPlist.strings in Resources */,
 				068D3E8F157F0EB70019B7D8 /* Credits.rtf in Resources */,
 				068D3E95157F0EB70019B7D8 /* MainMenu.xib in Resources */,
-				068D3EB4157F0EB70019B7D8 /* DashboardImporter.mdimporter in Resources */,
+				068D3EB4157F0EB70019B7D8 /* DaggerDashImporter.mdimporter in Resources */,
+				06E4EB7115858899002347A3 /* 55-todo.png in Resources */,
+				06E4EB7315858918002347A3 /* 55-todo.big.png in Resources */,
+				06E4EB751585894B002347A3 /* 55-todo.big.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,12 +462,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				061F97C5158081D300D7254E /* NoodleIPhoneTableView.h in Sources */,
-				061F97C6158081D300D7254E /* NoodleIPhoneTableView.m in Sources */,
-				061F97C7158081D300D7254E /* NoodleStickyRowTableView.h in Sources */,
-				061F97C8158081D300D7254E /* NoodleStickyRowTableView.m in Sources */,
-				061F97C9158081D300D7254E /* NSImage-NoodleExtensions.h in Sources */,
-				061F97CA158081D300D7254E /* NSImage-NoodleExtensions.m in Sources */,
+				06E4EB6A15858401002347A3 /* DDHotKeyCenter.h in Sources */,
+				06E4EB6B15858401002347A3 /* DDHotKeyCenter.m in Sources */,
 				06D77AAD157F4E94002A6B67 /* RegexKitLite.h in Sources */,
 				06D77AAE157F4E94002A6B67 /* RegexKitLite.m in Sources */,
 				068D3E8B157F0EB70019B7D8 /* main.m in Sources */,
@@ -466,9 +472,10 @@
 				068D3EEC157F1EF30019B7D8 /* PspctContentController.m in Sources */,
 				068D3EF3157F25DF0019B7D8 /* SpotlightSearch.m in Sources */,
 				061F97CE1580895C00D7254E /* PspctMetadataItem.m in Sources */,
-				06E9197E15818B5A00F61BBC /* PspctFileTypeCell.m in Sources */,
 				069D68F21581A54B007B36DB /* PspctItemTable.m in Sources */,
 				069D68F61581A746007B36DB /* PspctTestView.m in Sources */,
+				0668FCB91581D3C800395894 /* PspctTableCellView.m in Sources */,
+				06DA3B7E15846350004AD05D /* PspctWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,10 +484,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				068D3EAC157F0EB70019B7D8 /* DashboardTests.m in Sources */,
-				068D402C157F34580019B7D8 /* NoodleIPhoneTableView.m in Sources */,
-				068D402D157F34580019B7D8 /* NoodleStickyRowTableView.m in Sources */,
-				068D402E157F34580019B7D8 /* NSImage-NoodleExtensions.m in Sources */,
 				068D4032157F49960019B7D8 /* RegexKitLite.m in Sources */,
+				06E4EB6715858340002347A3 /* DDHotKeyCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,12 +504,12 @@
 /* Begin PBXTargetDependency section */
 		068D3EA3157F0EB70019B7D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 068D3E79157F0EB70019B7D8 /* Dashboard */;
+			target = 068D3E79157F0EB70019B7D8 /* DaggerDash */;
 			targetProxy = 068D3EA2157F0EB70019B7D8 /* PBXContainerItemProxy */;
 		};
 		068D3EB3157F0EB70019B7D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 068D3EB0157F0EB70019B7D8 /* DashboardImporter */;
+			target = 068D3EB0157F0EB70019B7D8 /* DaggerDashImporter */;
 			targetProxy = 068D3EB2157F0EB70019B7D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -605,11 +610,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DashboardImporter/DashboardImporter-Prefix.pch";
-				INFOPLIST_FILE = "DashboardImporter/DashboardImporter-Info.plist";
+				GCC_PREFIX_HEADER = "DashboardImporter/DaggerDashImporter-Prefix.pch";
+				INFOPLIST_FILE = "DashboardImporter/DaggerDashImporter-Info.plist";
 				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
 				LIBRARY_STYLE = BUNDLE;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DaggerDashImporter;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = mdimporter;
 			};
@@ -620,11 +625,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DashboardImporter/DashboardImporter-Prefix.pch";
-				INFOPLIST_FILE = "DashboardImporter/DashboardImporter-Info.plist";
+				GCC_PREFIX_HEADER = "DashboardImporter/DaggerDashImporter-Prefix.pch";
+				INFOPLIST_FILE = "DashboardImporter/DaggerDashImporter-Info.plist";
 				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
 				LIBRARY_STYLE = BUNDLE;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DaggerDashImporter;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = mdimporter;
 			};
@@ -634,10 +639,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Dashboard/Dashboard-Prefix.pch";
-				INFOPLIST_FILE = "Dashboard/Dashboard-Info.plist";
+				GCC_PREFIX_HEADER = "Dashboard/DaggerDash-Prefix.pch";
+				INFOPLIST_FILE = "Dashboard/DaggerDash-Info.plist";
 				OTHER_LDFLAGS = "-licucore";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DaggerDash;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -646,10 +651,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Dashboard/Dashboard-Prefix.pch";
-				INFOPLIST_FILE = "Dashboard/Dashboard-Info.plist";
+				GCC_PREFIX_HEADER = "Dashboard/DaggerDash-Prefix.pch";
+				INFOPLIST_FILE = "Dashboard/DaggerDash-Info.plist";
 				OTHER_LDFLAGS = "-licucore";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DaggerDash;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -661,8 +666,8 @@
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dashboard/Dashboard-Prefix.pch";
-				INFOPLIST_FILE = "DashboardTests/DashboardTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "DashboardTests/DaggerDashTests-Info.plist";
+				PRODUCT_NAME = DaggerDashTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -675,8 +680,8 @@
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dashboard/Dashboard-Prefix.pch";
-				INFOPLIST_FILE = "DashboardTests/DashboardTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "DashboardTests/DaggerDashTests-Info.plist";
+				PRODUCT_NAME = DaggerDashTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -685,7 +690,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		068D3E74157F0EB70019B7D8 /* Build configuration list for PBXProject "Dashboard" */ = {
+		068D3E74157F0EB70019B7D8 /* Build configuration list for PBXProject "DaggerDash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				068D3ECC157F0EB70019B7D8 /* Debug */,
@@ -694,7 +699,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		068D3ECE157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "DashboardImporter" */ = {
+		068D3ECE157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "DaggerDashImporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				068D3ECF157F0EB70019B7D8 /* Debug */,
@@ -703,7 +708,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		068D3ED1157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "Dashboard" */ = {
+		068D3ED1157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "DaggerDash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				068D3ED2157F0EB70019B7D8 /* Debug */,
@@ -712,7 +717,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		068D3ED4157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "DashboardTests" */ = {
+		068D3ED4157F0EB70019B7D8 /* Build configuration list for PBXNativeTarget "DaggerDashTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				068D3ED5157F0EB70019B7D8 /* Debug */,

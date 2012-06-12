@@ -20,7 +20,7 @@
     
     return self;
 }
-
+/*
 - (void)drawRect:(NSRect)dirtyRect
 {
     // Drawing code here.
@@ -30,7 +30,8 @@
 
 -(void)mouseDown:(NSEvent *)theEvent
 {
-    NSLog(@"enter: number: %ld, click: %ld", [theEvent buttonNumber], [theEvent clickCount]);
+    NSLog(@"entarser: number: %ld, click: %ld", [theEvent buttonNumber], [theEvent clickCount]);
+    //[[self window] makeFirstResponder:self];
 }
 
 -(void)mouseEntered:(NSEvent *)theEvent{
@@ -45,4 +46,9 @@
 -(void)swipeWithEvent:(NSEvent *)event{
     NSLog(@"swipe");
 }
+
+-(void)keyDown:(NSEvent *)theEvent{
+    NSLog(@"downnn");
+}
+*/
 @end

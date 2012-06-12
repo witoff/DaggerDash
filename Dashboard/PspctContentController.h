@@ -13,15 +13,20 @@
 @interface PspctContentController : NSObject<NSTableViewDelegate, NSTableViewDataSource>{
     
 @private
-    IBOutlet NSWindow *_window;
     IBOutlet PspctItemTable *_tableView;
     SpotlightSearch *search;
     IBOutlet NSTableColumn *col0;
     IBOutlet NSTableColumn *col1;
     IBOutlet NSImageView *imgView;
+    IBOutlet NSWindow *_window;
 
 }
 
--(IBAction)cellClick:(id)sender;
+-(void)openFile:(NSInteger)row;
+-(void)openFolder:(NSInteger)row;
+-(void)deleteTag:(NSInteger)row;
+
+-(NSArray*)getSelectedItems:(NSInteger)row;
+-(NSString*)getDaggerForRow:(NSInteger)row;
 
 @end

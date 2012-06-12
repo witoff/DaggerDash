@@ -8,7 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface PspctAppDelegate : NSObject <NSApplicationDelegate>
+@interface PspctAppDelegate : NSObject <NSApplicationDelegate>{
+    IBOutlet NSMenu *statusMenu;
+    NSStatusItem *statusItem;    
+}
 
 @property (assign) IBOutlet NSWindow *window;
 
@@ -17,5 +20,7 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)saveAction:(id)sender;
+- (IBAction)menuClick:(id)sender;
+- (void) registerShortcut;
 
 @end

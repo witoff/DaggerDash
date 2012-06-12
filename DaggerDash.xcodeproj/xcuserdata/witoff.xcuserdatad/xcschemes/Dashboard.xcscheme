@@ -15,8 +15,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "068D3E79157F0EB70019B7D8"
                BuildableName = "Dashboard.app"
-               BlueprintName = "Dashboard"
-               ReferencedContainer = "container:Dashboard.xcodeproj">
+               BlueprintName = "DaggerDash"
+               ReferencedContainer = "container:DaggerDash.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,8 +33,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "068D3E9D157F0EB70019B7D8"
                BuildableName = "DashboardTests.octest"
-               BlueprintName = "DashboardTests"
-               ReferencedContainer = "container:Dashboard.xcodeproj">
+               BlueprintName = "DaggerDashTests"
+               ReferencedContainer = "container:DaggerDash.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,8 +43,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "068D3E79157F0EB70019B7D8"
             BuildableName = "Dashboard.app"
-            BlueprintName = "Dashboard"
-            ReferencedContainer = "container:Dashboard.xcodeproj">
+            BlueprintName = "DaggerDash"
+            ReferencedContainer = "container:DaggerDash.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,8 +62,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "068D3E79157F0EB70019B7D8"
             BuildableName = "Dashboard.app"
-            BlueprintName = "Dashboard"
-            ReferencedContainer = "container:Dashboard.xcodeproj">
+            BlueprintName = "DaggerDash"
+            ReferencedContainer = "container:DaggerDash.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,8 +80,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "068D3E79157F0EB70019B7D8"
             BuildableName = "Dashboard.app"
-            BlueprintName = "Dashboard"
-            ReferencedContainer = "container:Dashboard.xcodeproj">
+            BlueprintName = "DaggerDash"
+            ReferencedContainer = "container:DaggerDash.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

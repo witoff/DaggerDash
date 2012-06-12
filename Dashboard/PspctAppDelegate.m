@@ -7,6 +7,7 @@
 //
 
 #import "PspctAppDelegate.h"
+#import "DDHotKeyCenter.h"
 
 @implementation PspctAppDelegate
 
@@ -14,6 +15,57 @@
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize managedObjectContext = __managedObjectContext;
+
+-(void)awakeFromNib{
+    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength] ;
+    //[statusItem setMenu:statusMenu];
+    //[statusItem setTitle:@"D"];
+    [statusItem setImage:[NSImage imageNamed:@"55-todo"]];
+    
+    [statusItem sendActionOn:NSLeftMouseUpMask];
+    [statusItem setTarget:self];
+    [statusItem setAction:@selector(menuClick:)];
+    [statusItem setHighlightMode:YES];
+    
+    
+    CGFloat height = [NSScreen mainScreen].visibleFrame.size.height;
+    [self.window setFrame:NSMakeRect(0, 0, 400, height) display:YES];
+    [self.window setAlphaValue:.8];
+    //[self.window setLevel:99999];
+    
+    [self registerShortcut];
+}
+
+- (void) registerShortcut {
+	DDHotKeyCenter * c = [[DDHotKeyCenter alloc] init];
+
+    //Command-Alt-T
+	if (![c registerHotKeyWithKeyCode:3 modifierFlags:NSCommandKeyMask|NSAlternateKeyMask target:self action:@selector(hotkeyWithEvent:) object:nil]) {
+		logDebug(@"unable to register keycode");
+	} else {
+		logDebug(@"success!");
+	}
+}
+
+- (void) hotkeyWithEvent:(NSEvent *)hkEvent {
+    logDebug(@"key pressed!");
+    [self menuClick:nil];
+}
+
+-(IBAction)menuClick:(id)sender{
+    logInfo(@"didClickMenu");
+    
+    if ([self.window isVisible]) {
+        //hide
+        [self.window orderOut:self];
+    }
+    else {
+        //show
+        //[self.window constrainFrameRect:NSMakeRect(0, 0, 400, 400) toScreen:[NSScreen mainScreen]];
+        [NSApp activateIgnoringOtherApps:YES];
+        [self.window makeKeyAndOrderFront:self];
+    }    
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -35,7 +87,7 @@
     if (__managedObjectModel) {
         return __managedObjectModel;
     }
-	
+    
     NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Dashboard" withExtension:@"momd"];
     __managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return __managedObjectModel;
@@ -112,7 +164,7 @@
     }
     __managedObjectContext = [[NSManagedObjectContext alloc] init];
     [__managedObjectContext setPersistentStoreCoordinator:coordinator];
-
+    
     return __managedObjectContext;
 }
 
@@ -155,13 +207,13 @@
     
     NSError *error = nil;
     if (![[self managedObjectContext] save:&error]) {
-
+        
         // Customize this code block to include application-specific recovery steps.              
         BOOL result = [sender presentError:error];
         if (result) {
             return NSTerminateCancel;
         }
-
+        
         NSString *question = NSLocalizedString(@"Could not save changes while quitting. Quit anyway?", @"Quit without saves error question message");
         NSString *info = NSLocalizedString(@"Quitting now will lose any changes you have made since the last successful save", @"Quit without saves error question info");
         NSString *quitButton = NSLocalizedString(@"Quit anyway", @"Quit anyway button title");
@@ -171,14 +223,14 @@
         [alert setInformativeText:info];
         [alert addButtonWithTitle:quitButton];
         [alert addButtonWithTitle:cancelButton];
-
+        
         NSInteger answer = [alert runModal];
         
         if (answer == NSAlertAlternateReturn) {
             return NSTerminateCancel;
         }
     }
-
+    
     return NSTerminateNow;
 }
 

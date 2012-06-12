@@ -24,10 +24,13 @@
 
 -(NSString*)getInitialName;
 
+-(NSString*)getRawName;
 -(NSString*)getName;
 -(NSString*)getPath;
 -(NSString*)getType;
-    
+
+-(NSArray*)getDaggers;
+
 -(BOOL)hasNameChanged;
 
 @end

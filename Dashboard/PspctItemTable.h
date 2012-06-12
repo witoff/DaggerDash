@@ -6,8 +6,14 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 #import <Foundation/Foundation.h>
-#import "NoodleIPhoneTableView.h"
 
-@interface PspctItemTable : NoodleIPhoneTableView
+@interface PspctItemTable : NSTableView{
+    
+    @private
+    
+    
+}
+
+
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "PspctMetadataItem.h"
+#import "RegexKitLite.h"
 
 @implementation PspctMetadataItem
 
@@ -18,7 +19,7 @@
     if (self)
     {
         self._item = item;
-        self._initialName = [self getName];
+        self._initialName = [self getRawName];
     }
     return self;
 }
@@ -28,9 +29,29 @@
 {
     return _initialName;
 }
+
+-(NSString*)getRawName{
+    return [_item valueForAttribute:(NSString*)kMDItemDisplayName];
+}
+
 -(NSString*)getName
 {
-    return [_item valueForAttribute:(NSString*)kMDItemDisplayName];
+    //Remove Extension
+    //NSLog(@"raw name: %@", [self getRawName]);
+    NSString *name = [[_item valueForAttribute:(NSString*)kMDItemDisplayName] stringByDeletingPathExtension];
+    
+    //Remove trailing daggers
+    //name = [name stringByReplacingOccurrencesOfRegex:@"(†[a-zA-Z0-0]\\s*)$" withString:@""];
+    if (![[name substringToIndex:1] isEqualToString:@"†"] )
+        name = [name stringByReplacingOccurrencesOfRegex:@"(?:†\\S+\\s*)+$" withString:@""];
+    //NSLog(@"fin name: %@", name);
+    return name;
+}
+
+-(NSArray*)getDaggers
+{
+    NSArray *daggers = [[self getRawName] arrayOfCaptureComponentsMatchedByRegex:@"†([a-zA-Z0-9]*)"];
+    return daggers;
 }
 
 -(NSMetadataItem*)getItem
@@ -40,7 +61,7 @@
 
 -(BOOL)hasNameChanged
 {
-    return ![[self getInitialName] isEqualToString:[self getName]];
+    return ![[self getInitialName] isEqualToString:[self getRawName]];
 }
 
 

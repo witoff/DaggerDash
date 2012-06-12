@@ -10,54 +10,60 @@
 #import "RegexKitLite.h"
 #import "PspctMetadataItem.h"
 
-@implementation SpotlightSearch
+@interface SpotlightSearch (hidden)
 
-@synthesize flattenedResults;
+-(void)processNewResults:(NSTimer*)aTimer;
+
+-(NSArray*)getFilteredResults;
+-(void)publishNewData:(NSArray*)results;
+-(void)groupAndFlattenResults:(NSArray*)results;
+
+
+@end
+
+@implementation SpotlightSearch
 
 -(id)init{
     self = [super init];
-    if (self)
-    {
-        query = [[NSMetadataQuery alloc] init];
+    if (self) {
+        _query = [[NSMetadataQuery alloc] init];
         _tableView = nil;
         _lastCount = 0;
-        flattenedResults = nil;
-        
+        _groupedResults = nil;
     }
     return self;
 }
 
-- (IBAction)startSearchAction:(id)sender
-{
-    //whatever query you want. emlx corresponds 
-    //to mail messages. you could easily
-    //configure search terms from user interaction.
-    NSPredicate *p = 
-    [NSPredicate predicateWithFormat:@"kMDItemDisplayName like '*†*'", nil];
-    [query setPredicate:p];
+-(void)registerTableView:(NSTableView*)view; {
+    _tableView = view;
+}
+
+#pragma mark timing
+
+- (IBAction)startSearchAction:(id)sender {
+    if ([_query isStarted]) {
+        //logDebug(@"already started");
+        return;
+    }
     
-    //optionally set search scopes
-    //[q setSearchScopes:
-    //    [NSArray arrayWithObject:@"/Users/matthew/Library/Mail/"]];
+    NSPredicate *p = [NSPredicate predicateWithFormat:@"kMDItemDisplayName LIKE '*†*'", nil];
     
-    //start the query and use the run loop 
-    //to process the search progress.
-    if ([query startQuery])
-    {
-        timer = 
+    [_query setPredicate:p];
+    // [_query setSearchScopes: [NSArray arrayWithObject:@"/Users/Rob/BnB/"]];
+    
+    if ([_query startQuery]) {
+        _timer = 
         [NSTimer scheduledTimerWithTimeInterval:0.2
                                          target:self 
-                                       selector:@selector(updateResults:) 
-                                       userInfo:query
+                                       selector:@selector(processNewResults:) 
+                                       userInfo:_query
                                         repeats:YES];
-        
         //NSRunLoop retains the timer
         [[NSRunLoop currentRunLoop] 
-         addTimer:timer
+         addTimer:_timer
          forMode:NSDefaultRunLoopMode];
     }
-    else
-    {
+    else {
         NSLog(@"Error. Could not start query. Weird.");
     }
 }
@@ -73,45 +79,34 @@
 - (void)stopSearching 
 {
     //don't invalidate a timer more than once
-    if (!([query isStopped]))
+    if (!([_query isStopped]))
     {
-        //NSLog(@"Finito. Num results = %d", [q resultCount]);
-        [self updateResults:timer];
-        [query stopQuery];
-        [timer invalidate];
+        [_query stopQuery];
+        [_timer invalidate];
     }
 }
 
--(void)refreshData
-{
-    _lastCount = query.results.count;
-    NSLog(@"refreshing data!");
-    [self groupResults];
-    [_tableView reloadData];
-    
-}
+#pragma mark data management
 
-- (void)updateResults:(NSTimer*)aTimer
+/* If query results have changed, then publish the updates */
+- (void)processNewResults:(NSTimer*)aTimer
 {
-    if (_lastCount != query.results.count)
-    {
-        [self refreshData];
+    NSArray *results = [self getFilteredResults];
+    
+    if (_lastCount != results.count) {
+        [self publishNewData:results];
         return;
     }
     
-    for (NSMetadataItem *newItem in query.results) {        
+    for (NSMetadataItem *newItem in results) {        
         
         //Object Matching
         BOOL found = NO;
-        for (id oldItem in self.flattenedResults)
-        {
-            if ([oldItem isKindOfClass:[PspctMetadataItem class]])
-            {
-                if ( [(PspctMetadataItem*)oldItem getItem] == newItem)
-                {
+        for (id oldItem in _groupedResults) {
+            if ([oldItem isKindOfClass:[PspctMetadataItem class]]) {
+                if ( [(PspctMetadataItem*)oldItem getItem] == newItem) {
                     //Check for changed names
-                    if (![(PspctMetadataItem*)oldItem hasNameChanged])
-                    {
+                    if (![(PspctMetadataItem*)oldItem hasNameChanged]) {
                         found = YES;
                     }
                     else
@@ -121,20 +116,16 @@
                 }
             }
         }
+        
         if (!found)
         {
-            [self refreshData];
+            [self publishNewData:results];
             return;                
         }
     }
     
-    
     //for (NSMetadataItem* item in query.results) {
     //NSLog(@"kMDItemFSName: %@", [item valueForAttribute:@"kMDItemFSName"]);
-    //NSLog(@"kMDItemDisplayName: %@", [item valueForAttribute:(NSString*)kMDItemPath]);
-    
-    //NSLog(@"kMDItemFSLabel: %@", [item valueForAttribute:@"kMDItemFSLabel"]);
-    
     
     /*
      kMDItemContentTypeTree,
@@ -164,46 +155,53 @@
      kMDItemFSLabel
      */
     //}
-    //[aTimer invalidate];
     
 }
 
--(NSUInteger)getResultCount
+-(NSArray*)getFilteredResults
 {
-    return query.resultCount;
-}
-
--(NSMetadataItem*)getResultAtIndex:(NSUInteger)index
-{
-    if (index<query.results.count)
+    //Check to see if anything has changed
+    
+    NSMutableArray *results = [[NSMutableArray alloc] initWithCapacity:_query.results.count];
+    
+    //Ignore files in the trash
+    NSArray *ignorePaths = qArray(@".Trash", [NSString pathWithComponents:qArray(@"Safari", @"History")]);
+    for(NSMetadataItem *item in _query.results)
     {
-        NSMetadataItem *item = [query resultAtIndex:index];
-        return item;
+        BOOL skip = NO;
+        for (NSString* path in ignorePaths) {
+            if ([[item valueForAttribute:(NSString*)kMDItemPath] rangeOfString:path].location!=NSNotFound)
+            {
+                skip=YES;
+                break;
+            }
+        }
+        if (!skip)
+            [results addObject:item];
     }
-    return nil;
+    return results;
 }
 
--(NSArray*)getGroupedResults
+-(void)publishNewData:(NSArray*)results
 {
-    return self.flattenedResults;
+    _lastCount = results.count;
+    NSLog(@"refreshing data!");
+    [self groupAndFlattenResults:results];
+    
+    if (_tableView)
+        [_tableView reloadData];
 }
 
--(void)groupResults;
+-(void)groupAndFlattenResults:(NSArray*)results;
 {
-    NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];    
     
-    NSString *name1 = @"testy testerst.rtf";
-    NSString *str1 = [name1 stringByMatching:@"([a-z]).*rtf" capture:0];
-    NSLog(@"TEST: %@", str1);
-    
-    
-    for (NSMetadataItem *item in query.results) {
+    for (NSMetadataItem *item in results) {
         PspctMetadataItem *mdItem = [[PspctMetadataItem alloc] initWithItem:item];
         
-        NSString *name = [mdItem getName];
-        NSArray *matches = [name arrayOfCaptureComponentsMatchedByRegex:@"†([a-zA-Z0-9]*)"];
+        NSArray *daggers = [mdItem getDaggers];
         
-        for (NSArray *set in matches) {
+        for (NSArray *set in daggers) {
             
             NSString *m = [set objectAtIndex:1];
             
@@ -221,29 +219,18 @@
     }
     
     //Flatten
-    NSMutableArray *flattened = [[NSMutableArray alloc] initWithCapacity:(dict.count +  query.resultCount)];
+    NSMutableArray *flattened = [[NSMutableArray alloc] initWithCapacity:(dict.count + results.count)];
     for (NSString *key in dict.keyEnumerator) {
         [flattened addObject:key];
         [flattened addObjectsFromArray:[dict objectForKey:key]];
     }
     
-    self.flattenedResults = flattened;
+    _groupedResults = flattened;
 }
 
--(NSString*)getResultNameAtIndex:(NSUInteger)index
+-(NSArray*)getGroupedResults
 {
-    if (index<query.results.count)
-    {
-        NSMetadataItem *item = [query resultAtIndex:index];
-        NSString* name = [item valueForAttribute:(NSString*)kMDItemDisplayName];
-        return name;
-    }
-    return nil;
-}
-
--(void)registerTableView:(NSTableView*)view;
-{
-    _tableView = view;
+    return _groupedResults;
 }
 
 @end

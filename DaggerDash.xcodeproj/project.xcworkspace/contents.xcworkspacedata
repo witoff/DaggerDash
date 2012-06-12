@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Dashboard.xcodeproj">
+      location = "self:DaggerDash.xcodeproj">
    </FileRef>
 </Workspace>

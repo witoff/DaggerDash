@@ -10,26 +10,23 @@
 
 @interface SpotlightSearch : NSObject
 {
-    NSMetadataQuery *query;
-    NSTimer *timer;
-    NSArray *flattenedResults;
+
+@private    
+    NSMetadataQuery *_query;
+    NSTimer *_timer;
     
-@private
+    NSArray *_groupedResults;
     NSTableView* _tableView;
     int _lastCount;
 }
 
-@property (nonatomic, retain) NSArray *flattenedResults;
-
 - (IBAction)startSearchAction:(id)sender;
 - (IBAction)stopSearchAction:(id)sender;
 
--(NSUInteger)getResultCount;
+/* grouped with section headersresults */
 -(NSArray*)getGroupedResults;
--(NSMetadataItem*)getResultAtIndex:(NSUInteger)index;
--(NSString*)getResultNameAtIndex:(NSUInteger)index;
--(void)registerTableView:(NSTableView*)view;
 
--(void)groupResults;
+/* a reload message will be sent to this tableview whenever search results change */
+-(void)registerTableView:(NSTableView*)view;
 
 @end
