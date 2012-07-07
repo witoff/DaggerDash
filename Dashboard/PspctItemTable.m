@@ -75,14 +75,19 @@
     PspctContentController* controller = (PspctContentController*)self.delegate;
     if (theEvent.modifierFlags==1048848 && theEvent.keyCode==1)
     {
-        //Pressing Command-R
+        //Command-R
         [controller openFolder:row];
         
+    }
+    else if (theEvent.modifierFlags==1048848 && theEvent.keyCode==41)
+    {
+        //Command-O
+        [controller openFile:row];
     }
     else if (theEvent.keyCode==36)
     {
         //Enter
-        [controller openFile:row];
+        [controller annotate:row];
     }
     else if (theEvent.keyCode==51 || theEvent.keyCode==117)
     {

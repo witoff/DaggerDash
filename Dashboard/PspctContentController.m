@@ -12,6 +12,8 @@
 #import "RegexKitLite.h"
 #import "PspctMetadataItem.h"
 #import "PspctTableCellView.h"
+#import "PspctTableHeaderView.h"
+#import "PspctAppDelegate.h"
 
 @implementation PspctContentController
 
@@ -56,26 +58,36 @@
     
 }
 
+-(CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row{
+    if ([self tableView:nil isGroupRow:row])
+        return 80.;
+    return 42;
+    
+}
+
 -(NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
-    PspctTableCellView *cell = [tableView makeViewWithIdentifier:@"DashCell" owner:self];
-    cell.controller = self;
-    cell.row = row;
+    PspctTableCellView *cell;
     
     id obj = [[search getGroupedResults] objectAtIndex:row];
     if ([self tableView:nil isGroupRow:row])
     {
+        cell = [tableView makeViewWithIdentifier:@"DashHeader" owner:self];
+        PspctTableHeaderView *headerCell = ((PspctTableHeaderView*)cell);
         // Headers
-        cell.textField.font = [NSFont systemFontOfSize:25.];
         cell.textField.stringValue = obj;
         cell.imageView.image = nil;
-        
+        PspctAppDelegate *delegate =  (PspctAppDelegate*)[NSApplication sharedApplication].delegate;
+        NSString *comment = [delegate.daggerComments objectForKey:obj];
+        if (comment)
+            headerCell.commentText.stringValue = comment;
+        //headerCell.commentText.delegate = headerCell;
     }
     else {
+        cell = [tableView makeViewWithIdentifier:@"DashCell" owner:self];
         // Data Cells
         PspctMetadataItem *item = (PspctMetadataItem*)obj;
-        
-        cell.textField.font = [NSFont systemFontOfSize:14.];
+
         
         NSString *name = [[item getName] stringByDeletingPathExtension];
         name = [name stringByReplacingOccurrencesOfString:@"†" withString:@""];
@@ -86,6 +98,8 @@
         cell.imageView.image = img;
         
     }
+    cell.controller = self;
+    cell.row = row;
     return cell;
 }
 
@@ -99,7 +113,37 @@
     return isClass;
 }
 
+-(void)annotate:(NSInteger)row {
+    logDebug(@"in annotate");
+    if ([self tableView:nil isGroupRow:row])
+        logDebug(@"isgroup");
 
+    //Get Row of header
+    NSInteger sectionRow = row;
+    while (![self tableView:nil isGroupRow:sectionRow])
+        sectionRow--;
+    
+    //Scroll up to header
+    [_tableView scrollRowToVisible:sectionRow];
+    
+    //Set focus in header
+    
+    for (NSTableRowView  *rowView in _tableView.subviews) {
+        PspctTableCellView *view = (PspctTableCellView*)[rowView viewAtColumn:0];
+        
+        if (view.row==sectionRow)
+        {
+            PspctTableHeaderView* header = (PspctTableHeaderView*)view;
+            
+            NSWindow *window = [[NSApplication sharedApplication].windows objectAtIndex:0];
+            [header.commentText setEditable:YES];
+            [window makeFirstResponder:header.commentText];
+        }
+    }
+}
+
+
+        
 -(void)openFile:(NSInteger)row{    
 
     if ([self tableView:nil isGroupRow:row])

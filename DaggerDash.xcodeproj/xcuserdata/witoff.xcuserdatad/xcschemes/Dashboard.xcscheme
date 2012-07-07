@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "068D3E79157F0EB70019B7D8"
-               BuildableName = "Dashboard.app"
+               BuildableName = "DaggerDash.app"
                BlueprintName = "DaggerDash"
                ReferencedContainer = "container:DaggerDash.xcodeproj">
             </BuildableReference>
@@ -32,7 +32,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "068D3E9D157F0EB70019B7D8"
-               BuildableName = "DashboardTests.octest"
+               BuildableName = "DaggerDashTests.octest"
                BlueprintName = "DaggerDashTests"
                ReferencedContainer = "container:DaggerDash.xcodeproj">
             </BuildableReference>
@@ -42,7 +42,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "068D3E79157F0EB70019B7D8"
-            BuildableName = "Dashboard.app"
+            BuildableName = "DaggerDash.app"
             BlueprintName = "DaggerDash"
             ReferencedContainer = "container:DaggerDash.xcodeproj">
          </BuildableReference>
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "068D3E79157F0EB70019B7D8"
-            BuildableName = "Dashboard.app"
+            BuildableName = "DaggerDash.app"
             BlueprintName = "DaggerDash"
             ReferencedContainer = "container:DaggerDash.xcodeproj">
          </BuildableReference>
@@ -79,7 +79,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "068D3E79157F0EB70019B7D8"
-            BuildableName = "Dashboard.app"
+            BuildableName = "DaggerDash.app"
             BlueprintName = "DaggerDash"
             ReferencedContainer = "container:DaggerDash.xcodeproj">
          </BuildableReference>

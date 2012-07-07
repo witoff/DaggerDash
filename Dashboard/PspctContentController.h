@@ -22,6 +22,7 @@
 
 }
 
+-(void)annotate:(NSInteger)row;
 -(void)openFile:(NSInteger)row;
 -(void)openFolder:(NSInteger)row;
 -(void)deleteTag:(NSInteger)row;

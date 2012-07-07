@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "068D3EB0157F0EB70019B7D8"
-               BuildableName = "DashboardImporter.mdimporter"
+               BuildableName = "DaggerDashImporter.mdimporter"
                BlueprintName = "DaggerDashImporter"
                ReferencedContainer = "container:DaggerDash.xcodeproj">
             </BuildableReference>

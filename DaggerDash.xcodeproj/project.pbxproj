@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		061F97CE1580895C00D7254E /* PspctMetadataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 061F97CD1580895C00D7254E /* PspctMetadataItem.m */; };
+		062DE9C515A82BAF00058564 /* PspctTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 062DE9C415A82BAF00058564 /* PspctTableHeaderView.m */; };
 		0668FCB91581D3C800395894 /* PspctTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0668FCB81581D3C800395894 /* PspctTableCellView.m */; };
 		068D3E7F157F0EB70019B7D8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068D3E7E157F0EB70019B7D8 /* Cocoa.framework */; };
 		068D3E89157F0EB70019B7D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 068D3E87157F0EB70019B7D8 /* InfoPlist.strings */; };
@@ -66,6 +67,8 @@
 /* Begin PBXFileReference section */
 		061F97CC1580895C00D7254E /* PspctMetadataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PspctMetadataItem.h; sourceTree = "<group>"; };
 		061F97CD1580895C00D7254E /* PspctMetadataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PspctMetadataItem.m; sourceTree = "<group>"; };
+		062DE9C315A82BAF00058564 /* PspctTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PspctTableHeaderView.h; sourceTree = "<group>"; };
+		062DE9C415A82BAF00058564 /* PspctTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PspctTableHeaderView.m; sourceTree = "<group>"; };
 		0668FCB71581D3C800395894 /* PspctTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PspctTableCellView.h; sourceTree = "<group>"; };
 		0668FCB81581D3C800395894 /* PspctTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PspctTableCellView.m; sourceTree = "<group>"; };
 		068D3E7A157F0EB70019B7D8 /* DaggerDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaggerDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,10 +76,10 @@
 		068D3E81157F0EB70019B7D8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		068D3E82157F0EB70019B7D8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		068D3E83157F0EB70019B7D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		068D3E86157F0EB70019B7D8 /* DaggerDash-Info.plist */ = {isa = PBXFileReference; path = "DaggerDash-Info.plist"; sourceTree = "<group>"; };
+		068D3E86157F0EB70019B7D8 /* DaggerDash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DaggerDash-Info.plist"; sourceTree = "<group>"; };
 		068D3E88157F0EB70019B7D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		068D3E8A157F0EB70019B7D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		068D3E8C157F0EB70019B7D8 /* DaggerDash-Prefix.pch */ = {isa = PBXFileReference; path = "DaggerDash-Prefix.pch"; sourceTree = "<group>"; };
+		068D3E8C157F0EB70019B7D8 /* DaggerDash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DaggerDash-Prefix.pch"; sourceTree = "<group>"; };
 		068D3E8E157F0EB70019B7D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		068D3E90157F0EB70019B7D8 /* PspctAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PspctAppDelegate.h; sourceTree = "<group>"; };
 		068D3E91157F0EB70019B7D8 /* PspctAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PspctAppDelegate.m; sourceTree = "<group>"; };
@@ -84,7 +87,7 @@
 		068D3E97157F0EB70019B7D8 /* Dashboard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dashboard.xcdatamodel; sourceTree = "<group>"; };
 		068D3E9E157F0EB70019B7D8 /* DaggerDashTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaggerDashTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		068D3E9F157F0EB70019B7D8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		068D3EA6157F0EB70019B7D8 /* DaggerDashTests-Info.plist */ = {isa = PBXFileReference; path = "DaggerDashTests-Info.plist"; sourceTree = "<group>"; };
+		068D3EA6157F0EB70019B7D8 /* DaggerDashTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DaggerDashTests-Info.plist"; sourceTree = "<group>"; };
 		068D3EA8157F0EB70019B7D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		068D3EAA157F0EB70019B7D8 /* DashboardTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashboardTests.h; sourceTree = "<group>"; };
 		068D3EAB157F0EB70019B7D8 /* DashboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashboardTests.m; sourceTree = "<group>"; };
@@ -93,14 +96,14 @@
 		068D3EB7157F0EB70019B7D8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		068D3EB9157F0EB70019B7D8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		068D3EBB157F0EB70019B7D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		068D3EBF157F0EB70019B7D8 /* DaggerDashImporter-Info.plist */ = {isa = PBXFileReference; path = "DaggerDashImporter-Info.plist"; sourceTree = "<group>"; };
+		068D3EBF157F0EB70019B7D8 /* DaggerDashImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DaggerDashImporter-Info.plist"; sourceTree = "<group>"; };
 		068D3EC1157F0EB70019B7D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		068D3EC3157F0EB70019B7D8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		068D3EC5157F0EB70019B7D8 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
 		068D3EC7157F0EB70019B7D8 /* MySpotlightImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySpotlightImporter.h; sourceTree = "<group>"; };
 		068D3EC8157F0EB70019B7D8 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
 		068D3ECA157F0EB70019B7D8 /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
-		068D3ECB157F0EB70019B7D8 /* DaggerDashImporter-Prefix.pch */ = {isa = PBXFileReference; path = "DaggerDashImporter-Prefix.pch"; sourceTree = "<group>"; };
+		068D3ECB157F0EB70019B7D8 /* DaggerDashImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DaggerDashImporter-Prefix.pch"; sourceTree = "<group>"; };
 		068D3EEA157F1EF30019B7D8 /* PspctContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PspctContentController.h; sourceTree = "<group>"; };
 		068D3EEB157F1EF30019B7D8 /* PspctContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PspctContentController.m; sourceTree = "<group>"; };
 		068D3EF1157F25DF0019B7D8 /* SpotlightSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotlightSearch.h; sourceTree = "<group>"; };
@@ -310,10 +313,12 @@
 		06E9197A15818B3C00F61BBC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				069D68F41581A746007B36DB /* PspctTestView.h */,
-				069D68F51581A746007B36DB /* PspctTestView.m */,
 				0668FCB71581D3C800395894 /* PspctTableCellView.h */,
 				0668FCB81581D3C800395894 /* PspctTableCellView.m */,
+				062DE9C315A82BAF00058564 /* PspctTableHeaderView.h */,
+				062DE9C415A82BAF00058564 /* PspctTableHeaderView.m */,
+				069D68F41581A746007B36DB /* PspctTestView.h */,
+				069D68F51581A746007B36DB /* PspctTestView.m */,
 				069D68F01581A54B007B36DB /* PspctItemTable.h */,
 				069D68F11581A54B007B36DB /* PspctItemTable.m */,
 				06DA3B7C15846350004AD05D /* PspctWindow.h */,
@@ -476,6 +481,7 @@
 				069D68F61581A746007B36DB /* PspctTestView.m in Sources */,
 				0668FCB91581D3C800395894 /* PspctTableCellView.m in Sources */,
 				06DA3B7E15846350004AD05D /* PspctWindow.m in Sources */,
+				062DE9C515A82BAF00058564 /* PspctTableHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

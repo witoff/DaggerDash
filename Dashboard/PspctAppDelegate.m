@@ -15,6 +15,9 @@
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize managedObjectContext = __managedObjectContext;
+@synthesize daggerComments;
+
+#define DAGGER_FILE @"/Users/witoff/.daggers.plist"
 
 -(void)awakeFromNib{
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength] ;
@@ -26,7 +29,6 @@
     [statusItem setTarget:self];
     [statusItem setAction:@selector(menuClick:)];
     [statusItem setHighlightMode:YES];
-    
     
     CGFloat height = [NSScreen mainScreen].visibleFrame.size.height;
     [self.window setFrame:NSMakeRect(0, 0, 400, height) display:YES];
@@ -71,6 +73,11 @@
 {
     // Insert code here to initialize your application
     NSLog(@"applicationDidFinishLaunching");
+    
+    daggerComments = [NSMutableDictionary dictionaryWithContentsOfFile:DAGGER_FILE];
+    if (!daggerComments)
+        daggerComments = [[NSMutableDictionary alloc] initWithCapacity:11];
+        
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.pspct.Dashboard" in the user's Application Support directory.
@@ -188,13 +195,24 @@
     }
 }
 
+-(void)saveComments{
+    logDebug(@"saving comments to: %@", DAGGER_FILE);
+    [daggerComments writeToFile:DAGGER_FILE atomically:YES];
+}
+
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender
 {
-    // Save changes in the application's managed object context before the application terminates.
+    [self saveComments];
     
+    
+    // Save changes in the application's managed object context before the application terminates.    
     if (!__managedObjectContext) {
         return NSTerminateNow;
     }
+    
+    
+    
+    
     
     if (![[self managedObjectContext] commitEditing]) {
         NSLog(@"%@:%@ unable to commit editing to terminate", [self class], NSStringFromSelector(_cmd));

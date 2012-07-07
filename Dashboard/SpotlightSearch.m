@@ -94,6 +94,7 @@
     NSArray *results = [self getFilteredResults];
     
     if (_lastCount != results.count) {
+        
         [self publishNewData:results];
         return;
     }
@@ -119,6 +120,7 @@
         
         if (!found)
         {
+            logDebug(@"change detected in: %@", [[[PspctMetadataItem alloc] initWithItem:newItem] getPath]);
             [self publishNewData:results];
             return;                
         }

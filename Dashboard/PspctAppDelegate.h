@@ -11,6 +11,8 @@
 @interface PspctAppDelegate : NSObject <NSApplicationDelegate>{
     IBOutlet NSMenu *statusMenu;
     NSStatusItem *statusItem;    
+    
+    NSMutableDictionary *daggerComments;
 }
 
 @property (assign) IBOutlet NSWindow *window;
@@ -18,9 +20,11 @@
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (readonly, strong, nonatomic) NSMutableDictionary *daggerComments;
 
 - (IBAction)saveAction:(id)sender;
 - (IBAction)menuClick:(id)sender;
 - (void) registerShortcut;
+-(void)saveComments;
 
 @end
